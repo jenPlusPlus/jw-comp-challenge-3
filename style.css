@@ -1,0 +1,59 @@
+body {
+  height: 100vh;
+  width: 100vh;
+}
+.sidebar {
+  width: 190px;
+  height: 100%;
+}
+
+.user {
+  height: 33.33%;
+}
+
+.nav-vertical {
+  height: 66.66%;
+}
+
+header {
+  width: 1090px;
+  height: 25%;
+}
+
+.search {
+  height: 25%;
+}
+
+.job-title {
+  height: 75%;
+}
+
+main {
+  height: 75%;
+}
+
+.nav-horizontal {
+  height: 10%;
+}
+
+.job-attributes {
+  height: 30%;
+}
+
+.job-description {
+  width: 75%;
+  height: 60%;
+}
+
+.share {
+  width: 25%;
+  height: 60%;
+}
+
+.social-media {
+  height: 33.33%;
+}
+
+.share-job-options {
+  height: 66.66%;
+}
