@@ -4,50 +4,184 @@
     <meta charset="utf-8">
     <title>Static Comp 3</title>
     <link type="text/css" href="style.css" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <section class="sidebar">
       <div class="user">
         <div class="avatar">
+          <!-- <img id= class="avatar" src="images/avatar.jpeg" /> -->
         </div>
         <div class="name">
+          <p>Jane Doe</p><img id="name-dropdown" class="icon" src="" />
         </div>
       </div>
-      <div class="nav-vertical">
-        <div class="main">
+      <nav class="nav-vertical">
+        <div class="main nav-section-vertical">
+          <ul class="top-level-list">
+            <li class="top-level-list-item">Main</li>
+              <ul class="nested-list">
+                <li class="nested-list-item small-caps"><img class="icon"/>home</li>
+                <li class="nested-list-item small-caps"><img class="icon"/>jobs</li>
+                <li class="nested-list-item small-caps"><img class="icon"/>resumes</li>
+                <li class="nested-list-item small-caps"><img class="icon"/>tasks</li>
+                <li class="nested-list-item small-caps"><img class="icon"/>calendar</li>
+              </ul>
         </div>
-        <div class="admin">
+        <div class="admin nav-section-vertical">
+          <li class="top-level-list-item">Admin</li>
+            <ul class="nested-list">
+              <li class="nested-list-item small-caps"><img class="icon"/>users</li>
+              <li class="nested-list-item small-caps"><img class="icon"/>locations</li>
+              <li class="nested-list-item small-caps"><img class="icon"/>workflows</li>
+              <li class="nested-list-item small-caps"><img class="icon"/>job boards</li>
+              <li class="nested-list-item small-caps"><img class="icon"/>social</li>
+            </ul>
         </div>
-        <div class="categories">
+        <div class="categories nav-section-vertical">
+          <li class="top-level-list-item">Categories</li>
+            <ul class="nested-list">
+              <li class="nested-list-item"><img class="icon colored-checkbox"/>Administrative</li>
+              <li class="nested-list-item"><img class="icon colored-checkbox"/>Design</li>
+              <li class="nested-list-item"><img class="icon colored-checkbox"/>Executive</li>
+              <li class="nested-list-item"><img class="icon colored-checkbox"/>Human Resources</li>
+            </ul>
+        </ul>
         </div>
-      </div>
+      </nav>
     </section>
     <section class="right-side">
       <header>
         <div class="search">
           <div class="search-icons hamburger">
+            <img class="collapse-hamburger" /><img class="collapse-hamburger" />
           </div>
           <div class="search-bar">
+            <fieldset>
+              <form>
+                <input type="search" placeholder="Search for a job, task or resume" />
+              </form>
+            </fieldset>
           </div>
-          <div class="search-icons person">
+          <div class="search-icons person"><img class="search-bar-images" />
           </div>
-          <div class="search-icons calendar">
+          <div class="search-icons calendar"><img class="search-bar-images" />
           </div>
-          <div class="search-icons squares">
+          <div class="search-icons squares"><img class="search-bar-images" />
           </div>
         </div>
         <div class="job-title">
+          <div class="job-title-container">
+            <h1>Customer Service Representative</h1>
+            <img class="" /><p><span class="">San Francisco, CA</span><img class="" /><span class="">Preview this post</span></p>
+          </div>
+          <div class="job-title-button-container">
+            <button class="button-oblong small-caps"><div class="indicator-green"></div>open</button>
+            <button class="button-round"><img class="icon-small-round"></button>
+            <button class="button-round"><img class="icon-small-round"></button>
+            <button class="button-round"><img class="icon-small-round"></button>
+          </div>
         </div>
       </header>
       <main>
         <div class="nav-horizontal">
+          <ul class="list-horizontal">
+            <li class="list-item-horizontal small-caps">summary</li>
+            <li class="list-item-horizontal small-caps">applicants</li>
+            <li class="list-item-horizontal small-caps">job board</li>
+            <li class="list-item-horizontal small-caps">interviews</li>
+            <li class="list-item-horizontal small-caps">activity</li>
+            <li class="list-item-horizontal small-caps">broadcast</li>
+            <li class="list-item-horizontal small-caps">notifications</li>
+          </ul>
         </div>
         <div class = "job-container">
           <div class="job-attributes">
+            <div class="graphs-circle">
+              <div class="graphs-circle-container">
+                <div class="graph-circle-1">
+                    <div class="inner-circle-container">
+                      <p class="inner-circle">3,154</p>
+                      <p class="small-caps inner-circle">applicants</p>
+                    </div>
+                </div>
+
+
+
+                <div class="graph-circle-2">
+                <div class="inner-circle-container">
+                <p class="inner-circle">1,546</p>
+                <p class="small-caps inner-circle">interviews</p>
+              </div>
+            </div>
+
+
+
+                <div class="graph-circle-3">
+                  <div class="inner-circle-container">
+                <p class="inner-circle">912</p>
+                <p class="small-caps inner-circle">forwards</p>
+                </div>
+              </div>
+
+            </div>
+
+                <div class="total oblong"><p><span class="small-caps">totals </span><span class="total-num">- Out of 5,231 views</span></p>
+                </div>
+              </div>
+            <div class="graphs-bar">
+              <div class="graph-bar-image">
+              </div>
+              <div class ="x-axis oblong">
+                <span class="small-caps">applicants/day</span>
+              </div>
+            </div>
           </div>
-          <div class="job-description">
+          <div class="job-description-container">
+            <div class="job-description-header">
+            <p class="small-caps table-header">job description</p>
+            <button class="edit small-caps">edit</button>
           </div>
+            <dl class="job-description-table">
+              <div class="table-row">
+                <dt>position title</dt>
+                <dd>Customer Service Representative</dd>
+              </div>
+              <div class="table-row">
+                <dt>location</dt>
+                <dd>San Francisco, CA</dd>
+              </div>
+              <div class="table-row">
+                <dt>employment type</dt>
+                <dd>Full-time</dd>
+              </div>
+              <div class="table-row">
+                <dt>experience</dt>
+                <dd>Mid-level</dd>
+              </div>
+              <div class="table-row">
+                <dt>status</dt>
+                <dd>Open</dd>
+              </div>
+              <div class="table-row">
+                <dt>description</dt>
+                <dd>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</dd>
+              </div>
+              <div class="table-row">
+              <dt>hiring lead</dt>
+              <dd>
+                <div class="hiring-lead">
+                </div>
+                Tom Tizzy
+              </dd>
+            </div>
+            <div class="table-row">
+              <dt>approved salary</dt>
+              <dd>$75,000</dd>
+            </div>
+           </div>
+          </dl>
           <div class="share-job">
             <div class="social-media">
             </div>
