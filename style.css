@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -10,41 +11,98 @@ body {
   position: relative;
 }
 
+span   {
+  font-size: 14px;
+  display: inline-block;
+}
+
+
+.small-caps {
+  font-variant: small-caps;
+  font-size: 16px;
+}
+
 .sidebar {
-  width: calc(100% * .15);
+  width: 175px;
   height: 100%;
   display: inline-block;
-  background: yellow;
+  background: #364053;
   position: absolute;
   left: 0;
   top: 0;
+  color: #F2F7FC;
 }
 
 .avatar {
-  width: 36.6666%;
-  height: 55%;
+  width: 70px;
+  height: 70px;
   border: 1px;
   border-style: solid;
   border-radius: 50%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
+  background-image: url("images/avatar.jpeg");
+  background-size: cover;
+  background-position: center;
 }
+
+/*.avatar-pic {
+  height: 100%;
+  width: 100%;
+}*/
 
 .name {
   width: 100%;
   height: 45%;
-  background: pink;
+  position: relative;
+  text-align: center;
+  padding-top: 6px;
+}
+
+li {
+  list-style: none;
+  padding: 3px 0;
+  font-size: 13px;
+}
+
+.nav-section-vertical {
+  border-top: 2px;
+  border-top-style: solid;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+.top-level-list {
+  padding: 10px 0;
+}
+
+.icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+#name-dropdown {
+  position: absolute;
+  top: 6px;
+  right: 28px;
 }
 
 .right-side {
-  width: calc(100% * .85);
+  width: calc(100vw - 175px);
   height: 100%;
   display: inline-block;
   background: white;
   position: absolute;
-  left: 15%;
+  left: 175px;
 }
 
+.job-title-button-container {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  margin-bottom: 5px;
+}
 
 header {
   width: 100%;
@@ -66,7 +124,6 @@ div {
 .user {
   width: 100%;
   height: calc(100% * .1633);
-  background: red;
   position: absolute;
   left: 0;
   top: 0;
@@ -75,7 +132,6 @@ div {
 .nav-vertical {
   width: 100%;
   height: calc(100% * .8366);
-  background: orange;
   position: absolute;
   left: 0;
   top: calc(100% * .1633);
@@ -87,49 +143,233 @@ div {
 .search {
   width: 100%;
   height: 47%;
-  background: blue;
+
   position: relative;
 }
 
 .search-icons {
   height: 100%;
   width: 10%;
-  display: inline-block;
+  display: flex;
 }
 
 .search-bar {
   height: 100%;
   width: 60%;
-  background: lightgray;
   display: inline-block;
   position: absolute;
   top: 0;
   left: 10%;
 }
 
-.hamburger {
-  background: aqua;
+.search-bar-images {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin: auto;
+}
+
+.collapse-hamburger {
+  width: 30px;
+  height: 30px;
+
+}
+
+fieldset {
+  border: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+input {
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-image: url();
+  background-position: left;*/
+}
+
+.list-item-horizontal {
+  display: inline;
+}
+
+.list-horizontal {
+  list-style: none;
+}
+
+.graphs-circle {
+  height: 100%;
+  width: 60%;
+  position: relative;
+  display: block;
+
+}
+
+/*.graph-circle-container {
+  height: 100%;
+  width: calc(100% / 3);
+}*/
+
+.graphs-bar {
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+.graphs-circle-container {
+  width: 100%;
+  height: 6em;
+  display: inline-flex;
+  margin: auto;
+}
+
+.graph-circle-1, .graph-circle-1-arc, .graph-circle-2, .graph-circle-2-arc, .graph-circle-3, .graph-circle-3-arc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 6em;
+  border: 5px;
+  border-radius: 50%;
+  border-color: gray;
+  border-left-color: red;
+  border-style: solid;
+  margin-top: 1.75em;
+  text-align: center;
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+  /*margin-left: 5px;*/
+}
+
+.graph-circle-1, .graph-circle-1-arc {
+  /*position: absolute;*/
+  /*top: 22px;*/
+  /*left: 55px;*/
+  margin-left: 3.2em;
+
+}
+
+.graph-circle-1-arc, .graph-circle-2-arc, .graph-circle-3-arc {
+  border-top-left-radius: 50%;
+  border-left-color: red;
+}
+
+.graph-circle-2, .graph-circle-2-arc {
+  /*position: absolute;*/
+  /*left: 175px;*/
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.graph-circle-3, .graph-circle-3-arc {
+  /*position: absolute;
+  margin-top: 22px;
+  right: 55px;*/
+  margin-right: 3.2em;
+}
+
+.oblong {
+width: 180px;
+  height: 35px;
+  border-radius: 50px;
+
+  margin: auto;
+  display: block;
+
+}
+
+.total {
+  margin-top: 2.3em;
+  left: 10.6em;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.span {
+  font-size: 15px;
+}
+
+.x-axis {
+  margin-left: 32.5%;
+  margin-right: 32.5%;
+  margin-top: 1px;
+  width: 35%;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.inner-circle-container {
+
+}
+
+.inner-circle {
+
+}
+
+.graph-bar-image {
+  margin-top: 6%;
+  width: 270px;
+  height: 115px;
+  background-image: url("images/graph-bar.png");
+  background-size: contain;
+}
+
+.table-header {
+    display: inline-block;
+}
+
+.edit {
+  border-style: none;
+}
+
+.hiring-lead {
+    display: inline-block;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.hamburger {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .person {
-  background: cornsilk;
   position: absolute;
   top: 0;
   left: 70%;
 }
 
 .calendar {
-  background: cyan;
   position: absolute;
   top: 0;
   left: 80%;
 }
 
 .squares {
-  background: blueviolet;
+
   position: absolute;
   top: 0;
   left: 90%;
@@ -138,14 +378,13 @@ div {
 .job-title {
   height: 53%;
   width: 100%;
-  background: lightblue;
+
 }
 
   /*job info menu*/
 .nav-horizontal {
   height: 7%;
   width: 100%;
-  background: lightgreen;
 }
 
 .job-container {
@@ -156,33 +395,49 @@ div {
 .job-attributes {
   height: 33%;
   width: 100%;
-  background: green;
+  position: relative;
 }
 
   /*job description*/
-
-.job-description {
-  width: 75%;
-  height: 67%;
-  background: darkgreen;
+dd {
   display: inline-block;
 }
 
+dt {
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.job-description-header, .edit {
+  background-color: #707D96;
+  background-image: url();
+}
+
+.table-row {
+  padding: 10px;
+}
+
+.job-description-container {
+  width: 75%;
+  height: 67%;
+  display: grid;
+}
+dd {
+  margin-left: 10px;
+}
   /*sharing job*/
 .share-job {
   width: 25%;
   height: 61.6%;
   display: inline-block;
   position: absolute;
-  background: black;
 }
 
 .social-media {
   height: 33.33%;
-  background: purple;
+
 }
 
 .share-job-options {
   height: 66.66%;
-  background: plum;
 }
