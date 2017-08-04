@@ -107,7 +107,7 @@ li {
   display: inline-block;
   position: absolute;
   right: 10px;
-  margin-bottom: 5px;
+  top: 69px;
 }
 
 header {
@@ -149,7 +149,9 @@ div {
 .search {
   width: 100%;
   height: 47%;
-
+  border: 1px;
+  border-style: solid;
+  border-color: #F2F2F2;
   position: relative;
 }
 
@@ -157,6 +159,13 @@ div {
   height: 100%;
   width: 10%;
   display: flex;
+  border-right: 1px;
+  border-right-style: solid;
+  border-right-color: #F2F2F2;
+}
+
+.search-icons:hover {
+   background: #13A5FA;
 }
 
 .search-bar {
@@ -181,6 +190,41 @@ div {
 
 }
 
+h1 {
+  font-weight: 400;
+  color: #5E5F61;
+}
+.job-title-container {
+  height: 65px;
+}
+
+.pin, .divider {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
+.pin {
+  margin-right: 10px;
+}
+.divider {
+  margin: 0 10px;
+}
+
+.byline {
+  padding-bottom: 10px;
+  display: inline-block;
+
+}
+.preview {
+  color: #13A5FA;
+  font-size: .75em;
+}
+
+.location {
+  color: #ADAFB1;
+  font-size: .75em;
+}
 fieldset {
   border: none;
   position: relative;
@@ -197,6 +241,45 @@ input {
   height: 100%;
   /*background-image: url();
   background-position: left;*/
+  padding-left: 5px;
+  color: #F2F2F2;
+}
+
+.button-round {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px;
+  border-style: solid;
+  border-color: #F2F2F2;
+  background: #FEFEFE;
+
+}
+
+.open {
+  width: 45px;
+  height: 25px;
+  border: 1px;
+  border-style: solid;
+  border-color: #F2F2F2;
+  border-radius: 20px;
+  font-size: 10px;
+  position: relative;
+  color: #5E5F61;
+  font-weight: 700;
+  background: #FEFEFE;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
+
+.indicator-green {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: green;
+  position: absolute;
+  top: 9px;
+  left: 5px;
 }
 
 .list-item-horizontal {
@@ -363,6 +446,9 @@ input {
   position: absolute;
   top: 0;
   left: 70%;
+  border-left: 1px;
+  border-left-style: solid;
+  border-left-color: #F2F2F2;
 }
 
 .calendar {
