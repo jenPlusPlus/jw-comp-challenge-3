@@ -71,6 +71,26 @@ li {
   font-size: 13px;
 }
 
+.list-item-horizontal {
+  list-style: none;
+  font-size: 14px;
+
+  color: #ABB1B7;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.list-item-horizontal:hover {
+  color: #77777E;
+  border-bottom: 2px;
+  border-bottom-color: #2EADFB;
+  border-bottom-style: solid;
+}
+
+.first-item {
+  margin-left: 15px;
+}
+
 .nav-section-vertical {
   border-top: 2px;
   border-top-style: solid;
@@ -196,6 +216,8 @@ h1 {
 }
 .job-title-container {
   height: 65px;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
 .pin, .divider {
@@ -246,8 +268,8 @@ input {
 }
 
 .button-round {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   border: 1px;
   border-style: solid;
@@ -284,10 +306,15 @@ input {
 
 .list-item-horizontal {
   display: inline;
+  font-weight: 700;
+  padding-bottom: 10px;
 }
 
 .list-horizontal {
   list-style: none;
+  position: absolute;
+  top: 13px;
+
 }
 
 .graphs-circle {
@@ -474,6 +501,7 @@ input {
 .nav-horizontal {
   height: 7%;
   width: 100%;
+  padding-top: 15px;
 }
 
 .job-container {
