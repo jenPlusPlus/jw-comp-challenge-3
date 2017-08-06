@@ -42,7 +42,7 @@ button {
 .avatar {
   width: 70px;
   height: 70px;
-  border: 1px;
+  border: 0;
   border-style: solid;
   border-radius: 50%;
   border-color: #8E98AB;
