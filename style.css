@@ -166,6 +166,7 @@ i {
   position: absolute;
   right: 10px;
   top: 69px;
+  margin-right: 15px;
 }
 
 header {
@@ -432,7 +433,6 @@ input {
   height: 100%;
   width: 40%;
   display: inline-block;
-  padding-right: 2.75em;
   position: absolute;
   top: 0;
   right: 0;
@@ -508,6 +508,15 @@ input {
   border-bottom-color: #B168B3;
 }
 
+.inner-circle-num {
+  font-family: 'Bitter', serif;
+  color: #5B6277;
+}
+
+.inner-circle-text {
+  color: #AAB3BC;
+}
+
 .oblong {
   padding-top: 7px;
   height: 35px;
@@ -532,10 +541,10 @@ input {
 
 .total-num {
   font-size: 10px;
+  padding-left: 2px;
 }
 
 .x-axis {
-  margin-top: 1px;
   width: 110px;
   text-align: center;
 
@@ -550,20 +559,22 @@ input {
 }
 
 .graph-bar-image {
-  margin-top: 6%;
-  width: 270px;
-  height: 115px;
+  width: 310px;
+  height: 130px;
   background-image: url("images/graph-bar.png");
-  background-size: contain;
+  background-size: cover;
   position: relative;
+  display: inline-block;
 }
 
 .hover-blurb-container {
   opacity: 0;
+  height: 40px;
+  width: 150px;
+  display: inline-block;
 }
 
 .hover-blurb-container:hover {
-  display: inline-block;
   opacity: 1;
 }
 
@@ -574,7 +585,7 @@ input {
   height: 10px;
   position: absolute;
   top:42px;
-  right: 63px;
+  right: 67px;
   transform: rotate(45deg);
 }
 
@@ -596,6 +607,14 @@ input {
 
 .hover-blurb-text, .num-apps, .num-ints {
   font-size: 8px;
+}
+
+.num-apps {
+  color: #4B9CA1;
+}
+
+.num-ints {
+  color: #4A86BC;
 }
 
 .hover-blurb-text {
@@ -984,18 +1003,18 @@ dd {
   width: 100%;
   height: 25px;
   font-size: 10px;
-  padding: 5px 0 3px 0;
+  padding: 5px 0 3px 3px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #ACAFB4;
   border-radius: 2px;
-}
-
-.copy {
   border: 1px;
   border-style: solid;
   border-color: #DADFE5;
+}
+
+.copy {
   position: relative;
   overflow-x: hidden;
   background: #FEFEFE;
