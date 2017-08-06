@@ -503,29 +503,38 @@ input {
 }
 
 .oblong {
-  width: 180px;
+  padding-top: 7px;
   height: 35px;
   border-radius: 50px;
-
+  border: 1px;
+  border-style: solid;
+  border-color: #E3E6E9;
   margin: auto;
   display: block;
+  color: #7E8089;
+  background-color: #FCFAFC;
 
 }
 
 .total {
+  width: 160px;
   margin-top: 2.3em;
   left: 10.6em;
   text-align: center;
-  padding-top: 8px;
+
+}
+
+.total-num {
+  font-size: 10px;
 }
 
 .x-axis {
   margin-left: 32.5%;
   margin-right: 32.5%;
   margin-top: 1px;
-  width: 35%;
+  width: 110px;
   text-align: center;
-  padding-top: 8px;
+
 }
 
 .inner-circle-container {
