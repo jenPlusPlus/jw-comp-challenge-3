@@ -475,8 +475,7 @@ input {
   height: 6em;
   border: 5px;
   border-radius: 50%;
-  border-color: gray;
-  border-left-color: red;
+  border-color: #DAE4EB;
   border-style: solid;
   margin-top: 1.75em;
   text-align: center;
@@ -496,7 +495,7 @@ input {
 
 .graph-circle-1-arc, .graph-circle-2-arc, .graph-circle-3-arc {
   border-top-left-radius: 50%;
-  border-left-color: red;
+
 }
 
 .graph-circle-2, .graph-circle-2-arc {
@@ -512,6 +511,21 @@ input {
   margin-top: 22px;
   right: 55px;*/
   margin-right: 3.2em;
+}
+
+.graph-circle-1 {
+  border-left-color: #49BCC5;
+}
+
+.graph-circle-2 {
+  border-right-color: #10A6FC;
+  border-top-color: #10A6FC;
+}
+
+.graph-circle-3 {
+  border-top-color: #B168B3;
+  border-left-color: #B168B3;
+  border-bottom-color: #B168B3;
 }
 
 .oblong {
