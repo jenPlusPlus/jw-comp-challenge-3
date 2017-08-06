@@ -6,6 +6,7 @@
     <link type="text/css" href="style.css" rel="stylesheet"
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/e75c2a0986.js"></script>
   </head>
   <body>
     <section class="sidebar">
@@ -14,7 +15,7 @@
           <!-- <img id= class="avatar" src="images/avatar.jpeg" /> -->
         </div>
         <div class="name">
-          <p>Jane Doe</p><img id="name-dropdown" class="icon" src="" />
+          <p>Jane Doe</p><i id="name-dropdown" class="fa fa-angle-down icon" aria-hidden="true"></i>
         </div>
       </div>
       <nav class="nav-vertical">
@@ -22,30 +23,31 @@
           <ul class="top-level-list">
             <li class="top-level-list-item">Main</li>
               <ul class="nested-list">
-                <li class="nested-list-item small-caps"><img class="icon"/>home</li>
-                <li class="nested-list-item small-caps"><img class="icon"/>jobs</li>
-                <li class="nested-list-item small-caps"><img class="icon"/>resumes</li>
-                <li class="nested-list-item small-caps"><img class="icon"/>tasks</li>
-                <li class="nested-list-item small-caps"><img class="icon"/>calendar</li>
+                <li class="nested-list-item small-caps"><i class="fa fa-home icon" aria-hidden="true" ></i>home</li>
+                <li class="nested-list-item small-caps"><i class="fa fa-briefcase icon" aria-hidden="true" ></i>jobs</li>
+                <li class="nested-list-item small-caps"><i class="fa fa-file-text icon" aria-hidden="true"></i>resumes</li>
+                <li class="nested-list-item small-caps"><i class="fa fa-tasks icon" aria-hidden="true"></i>tasks</li>
+                <li class="nested-list-item small-caps"><i class="fa fa-calendar icon" aria-hidden="true"></i>calendar</li>
               </ul>
         </div>
         <div class="admin nav-section-vertical">
           <li class="top-level-list-item">Admin</li>
             <ul class="nested-list">
-              <li class="nested-list-item small-caps"><img class="icon"/>users</li>
-              <li class="nested-list-item small-caps"><img class="icon"/>locations</li>
-              <li class="nested-list-item small-caps"><img class="icon"/>workflows</li>
-              <li class="nested-list-item small-caps"><img class="icon"/>job boards</li>
-              <li class="nested-list-item small-caps"><img class="icon"/>social</li>
+              <li class="nested-list-item small-caps"><i class="fa fa-users icon" aria-hidden="true"></i>users</li>
+              <li class="nested-list-item small-caps"><i class="fa fa-map-marker fa-lg icon" aria-hidden="true"></i>locations</li>
+              <li class="nested-list-item small-caps"><i class="fa fa-sitemap icon" aria-hidden="true"></i></i>workflows</li>
+              <li class="nested-list-item small-caps"><i class="fa fa-clipboard icon" aria-hidden="true"></i>job boards</li>
+              <li class="nested-list-item small-caps"><i class="fa fa-share-alt icon" aria-hidden="true"></i>social</li>
             </ul>
         </div>
         <div class="categories nav-section-vertical">
           <li class="top-level-list-item">Categories</li>
             <ul class="nested-list">
-              <li class="nested-list-item"><img class="icon colored-checkbox"/>Administrative</li>
-              <li class="nested-list-item"><img class="icon colored-checkbox"/>Design</li>
-              <li class="nested-list-item"><img class="icon colored-checkbox"/>Executive</li>
-              <li class="nested-list-item"><img class="icon colored-checkbox"/>Human Resources</li>
+              <li class="nested-list-item"><i class="fa fa-check-square icon colored-checkbox" aria-hidden="true"></i>
+Administrative</li>
+              <li class="nested-list-item"><i class="fa fa-square icon colored-checkbox blue" aria-hidden="true"></i>Design</li>
+              <li class="nested-list-item"><i class="fa fa-square icon colored-checkbox red" aria-hidden="true"></i>Executive</li>
+              <li class="nested-list-item"><i class="fa fa-square icon colored-checkbox green" aria-hidden="true"></i>Human Resources</li>
             </ul>
         </ul>
         </div>
@@ -54,33 +56,78 @@
     <section class="right-side">
       <header>
         <div class="search">
-          <div class="search-icons hamburger">
-            <img class="collapse-hamburger" /><img class="collapse-hamburger" />
+          <div class="hamburger">
+            <i class="fa fa-caret-left fl-lg collapse-hamburger"></i><i class="fa fa-bars collapse-hamburger" aria-hidden="true"></i>
           </div>
           <div class="search-bar">
             <fieldset>
               <form>
                 <input type="search" placeholder="Search for a job, task or resume" />
+                <i class="fa fa-search" aria-hidden="true"></i>
               </form>
             </fieldset>
           </div>
-          <div class="search-icons person"><img class="search-bar-images" />
+          <div class="search-icons person"><i class="fa fa-user-plus search-bar-images" aria-hidden="true"></i>
+
           </div>
-          <div class="search-icons calendar"><img class="search-bar-images" />
+          <div class="search-icons calendar"><i class="fa fa-calendar search-bar-images" aria-hidden="true"></i>
           </div>
-          <div class="search-icons squares"><img class="search-bar-images" />
+           <div class="search-icons squares"><!--<img src="images/nav_icon.svg" class="search-bar-images" fill=#AEB1B8/> -->
+          <svg class="search-bar-images" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ width="80.538px" height="80.538px" viewBox="0 0 80.538 80.538" style="enable-background:new 0 0 80.538 80.538;"
+ xml:space="preserve">
+<g>
+<g id="Grid_1_">
+  <g>
+    <path d="M0,21.965h21.965V0H0V21.965z M29.287,21.965h21.965V0H29.287V21.965z M58.573,0v21.965h21.965V0H58.573z M0,51.251
+      h21.965V29.287H0V51.251z M29.287,51.251h21.965V29.287H29.287V51.251z M58.573,51.251h21.965V29.287H58.573V51.251z M0,80.538
+      h21.965V58.573H0V80.538z M29.287,80.538h21.965V58.573H29.287V80.538z M58.573,80.538h21.965V58.573H58.573V80.538z"/>
+  </g>
+</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
           </div>
         </div>
         <div class="job-title">
           <div class="job-title-container">
             <h1>Customer Service Representative</h1>
-            <img class="pin" /><p class="byline"><span class="location">San Francisco, CA</span><img class="divider" /><span class="preview">Preview this post</span></p>
+            <i class="fa fa-map-marker location-marker" aria-hidden="true"></i><p class="byline"><span class="location">San Francisco, CA</span><div class="marker-container"><i class="fa fa-asterisk divider" aria-hidden="true"></i></div><span class="preview">Preview this post</span></p>
           </div>
           <div class="job-title-button-container">
             <button class="button-oblong small-caps open"><div class="indicator-green"></div>open</button>
-            <button class="button-round bookmark"></button>
-            <button class="button-round pencil"></button>
-            <button class="button-round trash"></button>
+            <button class="button-round bookmark"><i class="fa fa-bookmark" aria-hidden="true"></i></button>
+            <button class="button-round pencil"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <button class="button-round trash"><i class="fa fa-trash" aria-hidden="true"></i></button>
           </div>
         </div>
       </header>
@@ -142,7 +189,7 @@
             <dl class="job-description-table">
               <!-- <div class="table-header"> -->
                 <dt class="row-1-col-1 small-caps table-header-text">job description</dt>
-                <dd class="row-1-col-2"><button class="edit small-caps">edit</button></dd>
+                <dd class="row-1-col-2"><button class="edit small-caps"><span class="pencil-container"><i class="fa fa-pencil pencil-edit" aria-hidden="true"></i></span>edit</button></dd>
               <!-- </div> -->
 
 
@@ -196,7 +243,8 @@
             <div class="share-job-options">
               <div class="link share">
                 <div class="link-to-job title">
-                  Link to this Job
+                  <i class="fa fa-globe icons-right" aria-hidden="true"></i>
+                  <p class="title-right">Link to this Job</p>
                 </div>
                 <p class="share-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div class="copy">
@@ -206,7 +254,8 @@
 
                 <div class="button-widget-container">
                 <div class="button-widget title">
-                  Use the Button Widget
+                  <i class="fa fa-id-badge icons-right" aria-hidden="true"></i>
+                  <p class="title-right">Use the Button Widget</p>
                 </div>
                 <p class="share-text">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
                 <div class="copy">
@@ -216,13 +265,13 @@
               </div>
 
                 <div class="upload title">
-                  Upload Resumes by Email
+                  <i class="fa fa-paper-plane icons-right" aria-hidden="true"></i>
+                  <p class="title-right">Upload Resumes by Email</p>
                 </div>
                 <p class="share-text">You can automatically upload multiple resumes to this job by emailing the address below.</p>
                 <div class="email">
                   tomtizzy@gmail.com
                 </div>
-
               </div>
               <div class="widget share">
               </div>
