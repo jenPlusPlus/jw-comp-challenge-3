@@ -36,7 +36,7 @@ button {
   position: absolute;
   left: 0;
   top: 0;
-  color: #F2F7FC;
+  color: #8E98AB;
 }
 
 .avatar {
@@ -45,6 +45,7 @@ button {
   border: 1px;
   border-style: solid;
   border-radius: 50%;
+  border-color: #8E98AB;
   margin: auto;
   margin-top: 10px;
   background-image: url("images/avatar.jpeg");
@@ -164,7 +165,7 @@ i {
 #name-dropdown {
   position: absolute;
   top: 6px;
-  right: 28px;
+  right: 25px;
 }
 
 .right-side {
@@ -214,6 +215,11 @@ div {
   position: absolute;
   left: 0;
   top: calc(100% * .1633);
+
+}
+
+.nested-list-item:hover {
+  color: #F4F9FA;
 }
 
 /*main*/
