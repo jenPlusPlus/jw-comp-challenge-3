@@ -72,22 +72,6 @@ li {
   font-size: 13px;
 }
 
-.list-item-horizontal {
-  list-style: none;
-  font-size: 14px;
-
-  color: #ABB1B7;
-  margin-right: 20px;
-  margin-top: 10px;
-}
-
-.list-item-horizontal:hover {
-  color: #77777E;
-  border-bottom: 2px;
-  border-bottom-color: #2EADFB;
-  border-bottom-style: solid;
-}
-
 .first-item {
   margin-left: 15px;
 }
@@ -421,11 +405,7 @@ input {
   padding-top: 0;
 }
 
-.list-item-horizontal {
-  display: inline;
-  font-weight: 700;
-  padding-bottom: 10px;
-}
+
 
 .list-horizontal {
   list-style: none;
@@ -452,7 +432,7 @@ input {
   height: 100%;
   width: 40%;
   display: inline-block;
-
+  padding-right: 2.75em;
   position: absolute;
   top: 0;
   right: 0;
@@ -555,8 +535,6 @@ input {
 }
 
 .x-axis {
-  margin-left: 32.5%;
-  margin-right: 32.5%;
   margin-top: 1px;
   width: 110px;
   text-align: center;
@@ -577,7 +555,53 @@ input {
   height: 115px;
   background-image: url("images/graph-bar.png");
   background-size: contain;
+  position: relative;
 }
+
+.hover-blurb-container {
+  opacity: 0;
+}
+
+.hover-blurb-container:hover {
+  display: inline-block;
+  opacity: 1;
+}
+
+.triangle {
+  /*background: #48B8BC;*/
+  background: #354052;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top:42px;
+  right: 63px;
+  transform: rotate(45deg);
+}
+
+/*.triangle:hover {
+  background: #354052;
+}*/
+
+.hover-blurb {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  width: 110px;
+  height: 25px;
+  background: #354052;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 5px;
+}
+
+.hover-blurb-text, .num-apps, .num-ints {
+  font-size: 8px;
+}
+
+.hover-blurb-text {
+  color: #BBC2CD;
+}
+
 
 .table-header {
     display: inline-block;
@@ -644,16 +668,39 @@ input {
 }
 
   /*job info menu*/
+.job-container {
+  height: 92%;
+  width: 100%;
+  background: #EDF2F6;
+  border-top-color: #E5EAEE;
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+
 .nav-horizontal {
   height: 7%;
   width: 100%;
   padding-top: 15px;
 }
 
-.job-container {
-  height: 92%;
-  width: 100%;
-  background: #EDF2F6;
+.list-item-horizontal {
+  list-style: none;
+  font-size: 14px;
+
+  color: #ABB1B7;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+
+.list-item-horizontal:hover {
+  color: #77777E;
+  border-bottom: 2px;
+  border-bottom-color: #2EADFB;
+  border-bottom-style: solid;
 }
 
 .job-attributes {
