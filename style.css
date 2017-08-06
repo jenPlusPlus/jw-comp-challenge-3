@@ -94,6 +94,7 @@ li {
 .nav-section-vertical {
   border-top: 2px;
   border-top-style: solid;
+  border-top-color: #2E364A;
   margin-top: 10px;
   padding-top: 5px;
 }
