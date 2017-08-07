@@ -6,7 +6,7 @@
 }
 
 body {
-  width: 100vw;
+  width: auto;
   height: auto;
 }
 
@@ -156,7 +156,7 @@ i {
 }
 
 .right-side {
-  width: calc(100vw - 175px);
+  width: calc(100% - 175px);
   height: 100%;
   display: inline-block;
   position: absolute;
@@ -400,7 +400,6 @@ input {
 }
 .fa-bookmark, .fa-pencil, .fa-trash {
   margin: auto;
-  padding-top: 3px;
   color: #B5B3B7;
 
 }
@@ -728,6 +727,30 @@ input {
   height: 33%;
   width: 100%;
   position: relative;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #DCE1E5;
+  margin: 0 0 40px 0;
+}
+
+
+
+.hide-attributes {
+  height: 25px;
+  width: 25px;
+  border: 1px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #DCE1E5;
+  color: #DCE1E5;
+  background: #FDFCFD;
+  text-align: center;
+  padding-top: 2px;
+  padding-left: 4px;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  margin: 0 3px;
 }
 
   /*job description*/
